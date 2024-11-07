@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeWibuCC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="asset/css/trangchu.css">
+    <link rel="icon" href="anh.png">
+</head>
+<body>
+
+    <!-- Thanh điều hướng -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">AnimeWibuCC</div>
+            <nav>
+                <div class="dropdown">
+                    <a href="#">DẠNG ANIME <i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">TV Series</a>
+                        <a href="#">Movie/OVA</a>
+                        <a href="#">HH Trung Quốc</a>
+                        <a href="#">Anime Sắp Chiếu</a>
+                        <a href="#">Anime Đang Chiếu</a>
+                        <a href="#">Anime Trọn Bộ</a>
+                        <!-- Thêm các lựa chọn khác nếu cần -->
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">TOP ANIME <i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Theo Ngày</a>
+                        <a href="#">Yêu Thích</a>
+                        <a href="#">Theo Tháng</a>
+                        <a href="#">Theo Mùa</a>
+                        <a href="#">Theo Năm</a>
+                        <!-- Thêm các lựa chọn khác nếu cần -->
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">THỂ LOẠI <i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Action</a>
+                        <a href="#">Adventure</a>
+                        <a href="#">Cartoon</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">SEASON <i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Mùa Xuân</a>
+                        <a href="#">Mùa Hạ</a>
+                        <a href="#">Mùa Thu</a>
+                        <a href="#"> Mùa Đông</a>
+                    </div>
+                </div>
+                <a href="#">THƯ VIỆN</a>
+                <a href="#">LỊCH CHIẾU</a>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm..." />
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="nav-buttons">
+                <button class="login-btn">Đăng nhập</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Thông báo -->
+    <section class="notification-banner">
+        <p>Lưu hoặc nhớ ngay đây chỉ là website chưa hoàn thiện nên nhớ là vậy nhé!</p>
+        <p>Mời bạn tham gia Group <a href="#">tại đây!</a> hoặc tham gia Discord <a href="#">tại đây!</a> để ủng hộ AnimeWibuCC</p>
+    </section>
+     <!--Thanh ngang-->
+<div class="filter-divider"></div>
+    <section class="latest-movies">
+        <h2>Phim Mới Nhất <i class="fa-solid fa-star"></i></h2>
+        <div class="slider">
+            <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slider-content">
+                <a href="dandadan-thongtin.html" class="movie-item">
+                    <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/c35846a0-e86d-4076-8a84-7b7a43c90230.image.png?v=1730998191458" alt="Ảnh minh họa">
+                    <div class="episode-count">
+                        <span>Tập</span>
+                        <span>06</span>
+                    </div>
+                    <span class="rating-display">★9.7</span>
+                    <p>Dandadan</p>
+                </a>
+                <a href="haikyu-movie.html" class="movie-item">
+                    <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/539a10fc-19a1-4370-94dd-90ba1af33fff.image.png?v=1730827889708" alt="Ảnh minh họa">
+                    <div class="episode-count">
+                        <span>Hoàn</span>
+                        <span>Thành</span>
+                    </div>
+                    <span class="rating-display">★9.6</span>
+                    <p>Haikyu!! Movie: Trận Chiến Bãi Phế Liệu</p>
+                </a>
+                <a href="#" class="movie-item">
+                    <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/8f8129da-d018-4fdf-93cf-57b9a8f5660b.image.png?v=1730833955556" alt="Ảnh minh họa">
+                    <div class="episode-count">
+                        <span>Tập</span>
+                        <span>05</span>
+                    </div>
+                    <span class="rating-display">★9.4</span>
+                    <p>Seirei Gensouki: Spirit Chronicles Season 2</p>
+                </a>
+                <a href="#" class="movie-item">
+                    <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/a87019fb-ac7f-4804-8ea5-2caa2554e92f.image.png?v=1730834092166" alt="Ảnh minh họa">
+                    <div class="episode-count">
+                        <span>Tập</span>
+                        <span>05</span>
+                    </div>
+                    <span class="rating-display">★9.6</span>
+                    <p>Youkai Gakkou no Sensei Hajimemashita!</p>
+                </a>
+                <a href="#" class="movie-item">
+                    <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/6d64ccaa-7d7c-4876-8c61-f7e5db34256a.image.png?v=1730835236714" alt="Ảnh minh họa">
+                    <div class="episode-count">
+                        <span>Tập</span>
+                        <span>06</span>
+                    </div>
+                    <span class="rating-display">★8.7</span>
+                    <p>Saikyou no Shienshoku Wajutsushi de Aru Ore wa Sekai Saikyou Clan wo Shitagaeru, The Most Notorious Talker Runs the World's Greatest Clan</p>
+                </a>
+                <a href="#" class="movie-item">
+                    <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/4e43063c-cfc4-40ce-993b-291895b71751.image.png?v=1730835732170" alt="Ảnh minh họa">
+                    <div class="episode-count">
+                        <span>Tập</span>
+                        <span>05</span>
+                    </div>
+                    <span class="rating-display">★9.7</span>
+                    <p>Natsume Yuujinchou Shichi Season 7</p>
+                </a>
+                <a href="#" class="movie-item">
+                    <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/c3e40644-9e1a-4bd4-a855-090cc78b08dd.image.png?v=1730835914809" alt="Ảnh minh họa">
+                    <div class="episode-count">
+                        <span>Tập</span>
+                        <span>04</span>
+                    </div>
+                    <span class="rating-display">★9.2</span>
+                    <p>Arifureta Shokugyou de Sekai Saikyou 3rd Season</p>
+                </a>
+                <a href="#" class="movie-item">
+                    <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/c7816d46-6bf2-4caf-a543-ac8d2aff3f09.image.png?v=1730837070739" alt="Ảnh minh họa">
+                    <div class="episode-count">
+                        <span>Tập</span>
+                        <span>06</span>
+                    </div>
+                    <span class="rating-display">★9.2</span>
+                    <p>Nageki no Bourei wa Intai shitai</p>
+                </a>
+                <a href="#" class="movie-item">
+                    <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/635f9c7d-ff5e-46bf-8356-ce4d1a9c91e3.image.png?v=1730837375410" alt="Ảnh minh họa">
+                    <div class="episode-count">
+                        <span>Tập</span>
+                        <span>05</span>
+                    </div>
+                    <span class="rating-display">★8.1</span>
+                    <p>Tensei Kizoku, Kantei Skill de Nariagaru 2nd Season</p>
+                </a>
+                <a href="#" class="movie-item">
+                    <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/8ece7fca-1281-49ca-a883-1929ad8be63e.image.png?v=1730837476104" alt="Ảnh minh họa">
+                    <div class="episode-count">
+                        <span>Tập</span>
+                        <span>06</span>
+                    </div>
+                    <span class="rating-display">★9.6</span>
+                    <p>Shougakusei ni Naru</p>
+                </a>
+                <a href="#" class="movie-item">
+                    <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/72878b86-8892-4975-9bed-ef722b1f6404.image.png?v=1730837691910" alt="Ảnh minh họa">
+                    <div class="episode-count">
+                        <span>Tập</span>
+                        <span>04</span>
+                    </div>
+                    <span class="rating-display">★9.7</span>
+                    <p>Shangri-La Frontier 2nd Season</p>
+                </a>
+                </div>
+                <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+         <!--Thanh ngang-->
+<div class="filter-divider"></div>
+<div class="nav-chucnang">
+    <a href="#" class="nav-btn"><i class="fa-solid fa-house"></i> Trang chủ</a>
+    <span>/</span>
+    <a href="#" class="nav-btn">Tất cả</a>
+    <span>/</span>
+    <a href="#" class="nav-btn">Anime trọn bộ</a>
+    <span>/</span>
+    <a href="#" class="nav-btn">Anime lẻ</a>
+    <span>/</span>
+    <a href="#" class="nav-btn">HH Trung Quốc</a>
+</div>
+<!--Gói phim-->
+<div class="movie-gallery">
+    <div class="movie-item-wrapper">
+        <a href="dandadan-thongtin.html">
+            <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/c35846a0-e86d-4076-8a84-7b7a43c90230.image.png?v=1730998191458" alt="Movie Title">
+            <div class="episode-count">
+                <span>Tập</span>
+                <span>06</span>
+            </div>
+            <span class="rating-display">★9.7</span>
+            <a>Dadadan</a>
+        </a>
+    </div>
+    <div class="movie-item-wrapper">
+        <a href="haikyu-movie.html">
+            <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/539a10fc-19a1-4370-94dd-90ba1af33fff.image.png?v=1730827889708" alt="Movie Title 1">
+            <div class="episode-count">
+                <span>Hoàn</span>
+                <span>Thành</span>
+            </div>
+            <span class="rating-display">★9.6</span>
+            <a>Haikyu!! Movie: Trận Chiến Bãi Phế Liệu</a>
+        </a>
+    </div>
+    <div class="movie-item-wrapper">
+        <a href="#">
+            <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/a87019fb-ac7f-4804-8ea5-2caa2554e92f.image.png?v=1730834092166" alt="Movie Title">
+            <div class="episode-count">
+                <span>Tập</span>
+                <span>05</span>
+            </div>
+            <span class="rating-display">★9.6</span>
+            <a>Youkai Gakkou no Sensei Hajimemashita!</a>
+        </a>
+    </div>
+    <div class="movie-item-wrapper">
+        <a href="#">
+            <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/09872154-9028-4975-a79a-491cc8b6fda7.image.png?v=1730846658946" alt="Movie Title">
+            <div class="episode-count">
+                <span>Tập</span>
+                <span>05</span>
+            </div>
+            <span class="rating-display">★9.6</span>
+            <a>Mecha-Ude: Mechanical Arms</a>
+        </a>
+    </div>
+    <div class="movie-item-wrapper">
+        <a href="#">
+            <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/78a42b08-e519-4d59-8279-f17591f4f1a2.image.png?v=1730846793356" alt="Movie Title">
+            <div class="episode-count">
+                <span>Tập</span>
+                <span>05</span>
+            </div>
+            <span class="rating-display">★9.4</span>
+            <a>Raise wa Tanin ga Ii</a>
+        </a>
+    </div>
+    <div class="movie-item-wrapper">
+        <a href="#">
+            <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/c85e0c11-fa9f-470c-998f-d203e9aa900c.image.png?v=1730846947462" alt="Movie Title">
+            <div class="episode-count">
+                <span>Tập</span>
+                <span>62</span>
+            </div>
+            <span class="rating-display">★4.7</span>
+            <a>Five Element God Of War</a>
+        </a>
+    </div>
+    <div class="movie-item-wrapper">
+        <a href="#">
+            <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/8f8129da-d018-4fdf-93cf-57b9a8f5660b.image.png?v=1730833955556" alt="Movie Title 1">
+            <div class="episode-count">
+                <span>Tập</span>
+                <span>05</span>
+            </div>
+            <span class="rating-display">★9.4</span>
+            <a>Seirei Gensouki: Spirit Chronicles Season 2</a>
+        </a>
+    </div>
+    <div class="movie-item-wrapper">
+        <a href="#">
+            <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/6d64ccaa-7d7c-4876-8c61-f7e5db34256a.image.png?v=1730835236714" alt="Movie Title">
+            <div class="episode-count">
+                <span>Tập</span>
+                <span>06</span>
+            </div>
+            <span class="rating-display">★8.7</span>
+            <a>Saikyou no Shienshoku Wajutsushi de Aru Ore wa Sekai Saikyou Clan wo Shitagaeru, The Most Notorious Talker Runs the World's Greatest Clan</a>
+        </a>
+    </div>
+    <div class="movie-item-wrapper">
+        <a href="#">
+            <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/2f72a7ae-f8b6-4f17-a01b-767401c02847.image.png?v=1730847406967" alt="Movie Title">
+            <div class="episode-count">
+                <span>Tập</span>
+                <span>05</span>
+            </div>
+            <span class="rating-display">★9.3</span>
+            <a>Kamonohashi Ron no Kindan Suiri 2nd Season</a>
+        </a>
+    </div>
+    <div class="movie-item-wrapper">
+        <a href="#">
+            <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/c3e40644-9e1a-4bd4-a855-090cc78b08dd.image.png?v=1730835914809" alt="Movie Title">
+            <div class="episode-count">
+                <span>Tập</span>
+                <span>04</span>
+            </div>
+            <span class="rating-display">★9.2</span>
+            <a>Arifureta: From Commonplace to World's Strongest Season 3</a>
+        </a>
+    </div>
+    <div class="movie-item-wrapper">
+        <a href="#">
+            <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/4e43063c-cfc4-40ce-993b-291895b71751.image.png?v=1730835732170" alt="Movie Title">
+            <div class="episode-count">
+                <span>Tập</span>
+                <span>05</span>
+            </div>
+            <span class="rating-display">★9.7</span>
+            <a>Natsume's Book of Friends Season 7</a>
+        </a>
+    </div>
+    <div class="movie-item-wrapper">
+        <a href="#">
+            <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/68e865d8-71c2-4745-8b7f-99d135dcc352.image.png?v=1730847797224" alt="Movie Title">
+            <div class="episode-count">
+                <span>Tập</span>
+                <span>04</span>
+            </div>
+            <span class="rating-display">★8.4</span>
+            <a>The Seven Deadly Sins: Four Knights of the Apocalypse Season 2</a>
+        </a>
+    </div>
+    <a href="trang_con.html" class="btn">Xem thêm...    </a>
+    <script src="trangchu.js"></script>
+
+</body>
+</html>

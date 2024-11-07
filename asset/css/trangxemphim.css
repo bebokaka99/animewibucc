@@ -1,0 +1,540 @@
+/* Cài đặt cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Alata', sans-serif;
+}
+body {
+    font-family: "Alata", sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+/* Thanh điều hướng */
+.navbar {
+    width: 100%;
+    background-color: #2b2b2b;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff3333;
+    margin-right: 2rem; /* Tạo khoảng cách giữa logo và các nút */
+}
+
+/* Các mục trong thanh điều hướng */
+.navbar nav a {
+    margin: 0 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem; /* Thu nhỏ kích thước chữ của các nút */
+}
+
+/* Thanh tìm kiếm */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Đẩy thanh tìm kiếm sát vào nút Đăng nhập */
+}
+
+.search-bar input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-btn {
+    padding: 0.5rem 1rem;
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Nút đăng nhập */
+.nav-buttons {
+    display: flex;
+    margin-left: 0.5rem; /* Thêm khoảng cách nhỏ giữa thanh tìm kiếm và nút Đăng nhập */
+}
+
+.login-btn {
+    padding: 0.5rem 1rem;
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #cc0000;
+}
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 0.5rem;
+    border-radius: 5px;
+    min-width: 180px; /* Giữ chiều rộng tối thiểu */
+    width: 100%; /* Đặt chiều rộng bằng 100% để phù hợp với nút chính */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    max-height: 200px; /* Giới hạn chiều cao để tạo cuộn */
+    overflow-y: auto; /* Cho phép cuộn dọc khi nội dung quá dài */
+}
+
+/* Hiển thị menu khi hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Thiết kế các mục trong dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px; /* Tăng khoảng cách giữa các lựa chọn */
+    text-decoration: none;
+    display: block;
+    margin: 5px 0; /* Thêm khoảng cách giữa các mục */
+    border-radius: 5px; /* Bo tròn các lựa chọn */
+    white-space: nowrap; /* Ngăn không cho xuống dòng */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Hiển thị dấu ba chấm nếu quá dài */
+}
+
+/* Thiết kế thanh cuộn trong dropdown */
+.dropdown-content::-webkit-scrollbar {
+    width: 8px; /* Độ rộng thanh cuộn */
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+    background: transparent; /* Nền thanh cuộn trong suốt */
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3); /* Màu trắng trong suốt cho thanh cuộn */
+    border-radius: 10px; /* Bo tròn thanh cuộn */
+    border: 2px solid transparent; /* Tạo khoảng cách giữa thanh cuộn và track */
+    background-clip: content-box; /* Để viền trong suốt */
+}
+
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Thay đổi màu thanh cuộn khi hover */
+}
+/* Thông báo */
+.notification-banner {
+    max-width: 80%;
+    margin: 0 auto; 
+    padding: 1rem;
+    background-color: #333;
+    color: #ffcc00;
+    text-align: center;
+    font-size: 1.8rem; /* Tăng kích thước chữ */
+    line-height: 1.5; /* Tăng khoảng cách giữa các hàng chữ */
+}
+/* Các nút mới cập nhật, tất cả, anime trọn bộ, anime lẻ, HH trung quốc */
+.nav-chucnang {
+    display: flex;
+    align-items: center; /* Căn chỉnh thẳng hàng với các khối ở trên */
+    margin-left: 9rem; /* Tạo khoảng cách bên trái để các nút lệch về phía bên trái */
+}
+
+.nav-btn {
+    color: white; /* Màu chữ */
+    text-decoration: none; /* Bỏ gạch chân */
+    margin: 0 0.5rem; /* Khoảng cách giữa các nút */
+}
+.nav-btn:hover {
+    color: rgb(255, 213, 0); /* Đổi màu chữ thành đen khi hover */
+}
+span {
+    color: white; /* Màu chữ cho dấu "/" */
+    margin: 0 0.5rem; /* Khoảng cách giữa nút và dấu "/" */
+}
+/* Thanh gạch ngang phân cách */
+.filter-divider {
+    width: 80%; /* Chiều rộng thanh gạch ngang */
+    height: 2px; /* Chiều cao thanh gạch ngang */
+    background-color: #2b2b2b; /* Màu của thanh gạch ngang */
+    margin: 20px auto; /* Căn giữa thanh gạch ngang */
+}
+/* Overlay thông báo quảng cáo */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    z-index: 2;
+    padding: 20px;
+}
+/* Video */
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ẩn overlay khi bắt đầu phát video */
+video.playing + .overlay {
+    display: none;
+}
+/* Container cho các nút điều khiển */
+.video-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+}
+
+/* Style chung cho các nút */
+.control-button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+/* Chế độ "Tắt đèn" */
+.dark-mode {
+    background-color: #000; /* Màu nền tối */
+    color: #fff; /* Màu chữ sáng */
+}
+
+.dark-mode .video-controls,
+.dark-mode .video-container {
+    background-color: #1a1a1a; /* Tối màu của các phần tử điều khiển và video */
+}
+.overlay {
+    display: none;
+}
+#playButton {
+    display: none;
+}
+/* Phần chứa video */
+.video-container {
+    margin: 20px 15px 20px 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.video-info-container {
+    display: flex;
+    max-width: 80%;
+    margin: 20px auto;
+    background-color: #2b2b2b;
+    gap: 5px;
+}
+
+/* Khối thông tin phim */
+.movie-info-video {
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 25%; /* Chiếm 40% chiều rộng */
+    font-size: 1.1rem;
+}
+.movie-info-video p {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.movie-info-video p strong {
+    color: #ff1313;
+}
+.movie-title-video {
+    margin-bottom: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.5rem;
+    color: #ffcc00;
+  }
+  /*Tập phim*/
+  .episodes-section {
+    max-width: 80%;
+    margin: 20px auto;
+    background-color: #333; /* Màu nền phần chứa tập phim */
+    color: #fff; /* Màu chữ */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.episodes-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Màu vàng cho tiêu đề */
+}
+
+.episodes-list {
+    display: flex; /* Sử dụng Flexbox để sắp xếp các tập phim theo hàng ngang */
+    flex-wrap: wrap; /* Cho phép các tập phim xuống hàng nếu không đủ chỗ */
+    gap: 5px; /* Khoảng cách giữa các tập phim */
+    list-style: none; /* Loại bỏ dấu chấm nếu bạn sử dụng <ul> */
+    padding: 0; /* Loại bỏ padding mặc định */
+    margin: 0; /* Loại bỏ margin mặc định */
+}
+
+.episodes-list a {
+    color: #fff;
+    text-decoration: none; /* Xóa gạch chân */
+    font-size: 1rem;
+    padding: 10px 20px; /* Tạo không gian cho các liên kết */
+    background-color: #444; /* Màu nền cho các liên kết */
+    border-radius: 5px; /* Bo góc các liên kết */
+    transition: background-color 0.3s ease;
+}
+/* Phần thông tin phim */
+.movie-info {
+    max-width: 80%;
+    margin: 1rem auto;
+    background-color: #2b2b2b;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /* Đảm bảo các phần tử trong movie-info sẽ xếp theo chiều dọc */
+    align-items: flex-start; /* Căn lề trái tất cả các phần tử trong movie-info */
+}
+/* Phần header của phim (bao gồm ảnh minh họa và tên phim) */
+.movie-header {
+    display: flex;
+    flex-direction: row; /* Xếp ảnh minh họa và nội dung theo hàng ngang */
+    align-items: flex-start; /* Đảm bảo nội dung căn lên trên cùng của ảnh */
+    justify-content: flex-start; /* Đảm bảo các phần tử trong movie-header nằm về phía bên trái */
+    width: 100%;
+}
+
+/* Ảnh minh họa của phim */
+.movie-poster {
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+/* Nội dung chi tiết phim (bao gồm tên và mô tả) */
+.movie-details {
+    flex: 1;
+    flex-direction: column; /* Đảm bảo tên phim và mô tả xếp theo chiều dọc */
+    justify-content: flex-start; /* Nội dung căn lên trên cùng */
+  overflow: hidden;     /* Ẩn phần văn bản bị cắt */
+  text-overflow: ellipsis;
+}
+
+/* Tiêu đề của phim */
+.movie-details h1 {
+    font-size: 2rem;
+    color: #b5e745;
+    margin-bottom: 1rem;
+    text-align: left; /* Căn trái tiêu đề */
+}
+
+/* Mô tả phim */
+.movie-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #8f8f8f;
+    text-align: left; /* Căn trái mô tả */
+}
+/* Nút thể loại */
+.movie-genres {
+    margin-top: 2rem;
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.genre-btn {
+    padding: 0.3rem 0.7rem;
+    border: 2px solid #ffcc00;
+    background-color: transparent;
+    color: #ffcc00;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.genre-btn:hover {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+/* Phần metadata của phim */
+.movie-meta {
+    display: flex;
+    flex-direction: column; /* Sắp xếp theo chiều dọc */
+    gap: 1rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+/* Phần đánh giá phim */
+.rating {
+    display: flex;
+    margin-left: auto;
+    direction: rtl; /* Đảo ngược thứ tự sao */
+    font-size: 30px;
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+.rating input {
+    display: none; /* Ẩn các input radio */
+}
+
+.rating label {
+    color: #ccc; /* Màu ngôi sao khi chưa chọn */
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.rating input:checked ~ label {
+    color: gold; /* Màu vàng khi ngôi sao được chọn */
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold; /* Hiệu ứng hover */
+}
+.movie-genres, .rating {
+    margin-bottom: 0.1rem; /* Giảm khoảng cách giữa các mục */
+}
+/* Phần thông tin thêm dưới rating */
+.movie-extra-info {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+.movie-extra-info span {
+    display: block;
+}
+
+/* Ví dụ về màu sắc và căn lề các thông tin chi tiết */
+.movie-extra-info .info-item {
+    color: #999;
+}
+.movie-info-container {
+    display: flex;
+    flex-wrap: comlumn;
+    max-width: 80%;
+    margin: 1rem auto;
+    background-color: #2b2b2b;
+    padding: 1rem;
+    margin-top: 1rem;
+    gap: 1rem; /* Khoảng cách giữa các cột */
+}
+.movie-info-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #b5e745;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+.movie-info-column {
+    flex: 1; /* Chia đều chiều rộng cho mỗi cột */
+    min-width: 200px;
+}
+
+.movie-info-column strong {
+    margin: 0.5rem 0; /* Khoảng cách giữa các dòng thông tin */
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+.movie-info-column p {
+    margin: 0.5rem 0; /* Khoảng cách giữa các dòng thông tin */
+    font-size: 0.9rem;
+    color: #8f8f8f;
+}
+/*Bình Luận*/
+.info-box {
+    max-width: 80%;
+    margin: 1rem auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h2 {
+    margin-top: 0;
+    color: #ffe100;
+}
+
+.info-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-box ul li {
+    margin: 5px 0;
+}
+
+.info-box textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ffb300;
+    padding: 10px;
+}
+
+.submit {
+    background-color: #4CAF50; /* Màu xanh lá cho nút gửi bình luận */
+}
+.action-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.episodes-list a.active {
+    background-color: #ff3333; /* Màu đỏ cho nút hiện tại */
+    color: #fff;
+}
