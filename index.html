@@ -65,8 +65,27 @@
             <div class="nav-buttons">
                 <button class="login-btn">Đăng nhập</button>
             </div>
+            <div class="hamburger-menu" onclick="toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+            <!-- Menu ẩn khi nhấn vào nút 3 gạch -->
+            <div id="mobileMenu" class="mobile-menu">
+                <button class="close-menu-btn" onclick="toggleMobileMenu()">&#10006;</button>
+                <nav>
+                    <a href="#">TRANG CHỦ</a>
+                    <a href="#">DẠNG ANIME</a>
+                    <a href="#">TOP ANIME</a>
+                    <a href="#">THỂ LOẠI</a>
+                    <a href="#">SEASON</a>
+                    <a href="#">THƯ VIỆN</a>
+                    <a href="#">LỊCH CHIẾU</a>
+                </nav>
+            </div>
         </div>
     </header>
+    <!--Điều hướng trên điện thoại-->
+    <!-- Nút Menu 3 gạch -->
 
     <!-- Thông báo -->
     <section class="notification-banner">
@@ -233,6 +252,17 @@
         </a>
     </div>
     <div class="movie-item-wrapper">
+        <a href="anime/thieunienvachimdiec/thieunienvachimdiec.html">
+            <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/600930f2-b365-4587-93b9-058bab11b81b.image.png?v=1731263519511" alt="Movie Title">
+            <div class="episode-count">
+                <span>Hoàn</span>
+                <span>Thành</span>
+            </div>
+            <span class="rating-display">★9.1</span>
+            <a>Thiếu Niên Và Chim Diệc</a>
+        </a>
+    </div>
+    <div class="movie-item-wrapper">
         <a href="#">
             <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/a87019fb-ac7f-4804-8ea5-2caa2554e92f.image.png?v=1730834092166" alt="Movie Title">
             <div class="episode-count">
@@ -318,17 +348,6 @@
             </div>
             <span class="rating-display">★9.7</span>
             <a>Natsume's Book of Friends Season 7</a>
-        </a>
-    </div>
-    <div class="movie-item-wrapper">
-        <a href="#">
-            <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/68e865d8-71c2-4745-8b7f-99d135dcc352.image.png?v=1730847797224" alt="Movie Title">
-            <div class="episode-count">
-                <span>Tập</span>
-                <span>04</span>
-            </div>
-            <span class="rating-display">★8.4</span>
-            <a>The Seven Deadly Sins: Four Knights of the Apocalypse Season 2</a>
         </a>
     </div>
     <a href="theloai/anime-moi.html" class="btn">Xem thêm...    </a>

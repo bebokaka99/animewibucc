@@ -310,7 +310,6 @@ body {
 }
 span {
     color: white; /* Màu chữ cho dấu "/" */
-    margin: 0 0.5rem; /* Khoảng cách giữa nút và dấu "/" */
 }
 /* Container chứa tất cả các movie-item-wrapper */
 .movie-gallery {
@@ -363,4 +362,126 @@ span {
     font-weight: bold;
     text-align: center;
     transition: background-color 0.3s ease;
+}
+/* mobile */
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%; /* Chiếm 50% màn hình khi mở */
+    height: 100%;
+    background-color: #1c1c1c;
+    color: #fff;
+    padding-top: 3rem;
+    text-align: center;
+    z-index: 999;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%); /* Ẩn menu ban đầu */
+}
+
+/* Nội dung trong menu */
+.mobile-menu nav a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #ffcc00;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+
+.mobile-menu nav a:hover {
+    background-color: #333;
+}
+
+/* Nút đóng menu */
+.close-menu-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hiển thị menu khi mở */
+.mobile-menu.open {
+    transform: translateX(0); /* Hiện menu khi mở */
+}
+
+/* Thiết lập cho thiết bị di động */
+@media (max-width: 768px) {
+    /* Ẩn các mục không cần thiết trên điện thoại */
+    .navbar nav,
+    .search-bar,
+    .nav-buttons,
+    .login-btn {
+    display: none !important;
+    }
+
+    /* Nút menu 3 gạch hiển thị bên phải và cố định */
+    .hamburger-menu {
+        display: block !important;
+        position: absolute;
+    }
+
+    /* Logo căn trái hoàn toàn */
+    .logo {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        font-size: 1.5rem;
+        color: #ff3333;
+        z-index: 1000;
+    }
+
+    /* Thanh điều hướng (navbar) phủ toàn bộ chiều rộng */
+    .navbar {
+        padding: 0 1rem;
+        background-color: #2b2b2b;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+    }
+    /* Phần thông báo có thêm khoảng cách phía trên */
+    .notification-banner {
+        max-width: 95%;
+        margin: 0 auto;
+        line-height: 1.5;
+    }
+
+    /* Căn giữa các thành phần trong nội dung chính */
+    .latest-movies, .slider {
+        max-width: 95%; /* Đảm bảo các khối nội dung bên trong không vượt quá chiều rộng tối đa */
+        margin: 0 auto; /* Căn giữa từng phần tử */
+    }
+    .nav-chucnang {
+        display: block;
+        line-height: 2;
+        max-width: 95%; /* Đảm bảo các khối nội dung bên trong không vượt quá chiều rộng tối đa */
+        margin: 0 auto; /* Căn giữa từng phần tử */
+    }
+    .movie-gallery {
+        justify-content: space-evenly;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .movie-item-wrapper {
+        width: 159px;
+    }
 }

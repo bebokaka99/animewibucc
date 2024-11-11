@@ -37,3 +37,12 @@ function autoMoveSlide() {
 
 // Gọi hàm autoMoveSlide khi trang web load
 autoMoveSlide();
+//menu mobile
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenu.classList.contains('open')) {
+        mobileMenu.classList.remove('open');
+    } else {
+        mobileMenu.classList.add('open');
+    }
+}
