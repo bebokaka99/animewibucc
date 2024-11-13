@@ -52,7 +52,17 @@ hamburgerMenu.addEventListener('click', () => {
 // Đóng menu khi nhấn vào nút đóng
 closeBtn.addEventListener('click', () => {
     sideMenu.classList.remove('open');
+    document.body.style.overflow = ''; // Bật lại cuộn trang sau khi đóng menu
 });
+// Đóng menu khi nhấn vào bên ngoài menu
+document.addEventListener('click', (event) => {
+    // Kiểm tra nếu nhấn vào ngoài menu và menu đang mở
+    if (!sideMenu.contains(event.target) && !hamburgerMenu.contains(event.target) && sideMenu.classList.contains('open')) {
+        sideMenu.classList.remove('open');
+        document.body.style.overflow = ''; // Bật lại cuộn trang
+    }
+});
+
 // Lấy tất cả các mục có class 'chuyen_menu'
 const toggleMenus = document.querySelectorAll('.chuyen_menu');
 

@@ -408,7 +408,6 @@ button.selected {
 .so_tap span:last-child {
     margin-top: 4px; 
 }
-
 .menu_ba_gach {
     display: none;
     font-size: 1.5rem;
@@ -483,9 +482,13 @@ button.selected {
     flex: 1;
     text-align: left;
 }
+
+
 .menu_phu.open {
     display: flex;
 }
+
+
 @media (max-width: 1450px) {
     
     .thanh_dieu_huong nav {
@@ -496,10 +499,14 @@ button.selected {
     .nut_dang_nhap {
     display: none !important;
     }
+
+    
     .menu_ba_gach {
         display: block !important;
         position: absolute;
     }
+
+    
     .logo {
         position: absolute;
         left: 1rem;
