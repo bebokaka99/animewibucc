@@ -1,4 +1,4 @@
-/* Cài đặt cơ bản */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,15 +12,15 @@ body {
     color: #fff;
 }
 
-/* Thanh điều hướng */
-.navbar {
+
+.thanh_dieu_huong {
     width: 100%;
     background-color: #2b2b2b;
     padding: 1rem 0;
     margin-bottom: 1rem;
 }
 
-.container {
+.hop_chua {
     max-width: 80%;
     margin: 0 auto;
     display: flex;
@@ -28,37 +28,37 @@ body {
     justify-content: space-between;
 }
 
-/* Logo */
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ff3333;
-    margin-right: 2rem; /* Tạo khoảng cách giữa logo và các nút */
+    margin-right: 2rem; 
 }
 
-/* Các mục trong thanh điều hướng */
-.navbar nav a {
+
+.thanh_dieu_huong nav a {
     margin: 0 0.5rem;
     color: #fff;
     text-decoration: none;
-    font-size: 0.9rem; /* Thu nhỏ kích thước chữ của các nút */
+    font-size: 0.9rem; 
 }
 
-/* Thanh tìm kiếm */
-.search-bar {
+
+.thanh_tim_kiem {
     display: flex;
     align-items: center;
-    margin-left: auto; /* Đẩy thanh tìm kiếm sát vào nút Đăng nhập */
+    margin-left: auto; 
 }
 
-.search-bar input[type="text"] {
+.thanh_tim_kiem input[type="text"] {
     padding: 0.5rem;
     border: none;
     border-radius: 5px 0 0 5px;
     outline: none;
 }
 
-.search-btn {
+.nut_tim_kiem {
     padding: 0.5rem 1rem;
     background-color: #ff3333;
     color: #fff;
@@ -68,17 +68,17 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.search-btn:hover {
+.nut_tim_kiem:hover {
     background-color: #cc0000;
 }
 
-/* Nút đăng nhập */
+
 .nav-buttons {
     display: flex;
-    margin-left: 0.5rem; /* Thêm khoảng cách nhỏ giữa thanh tìm kiếm và nút Đăng nhập */
+    margin-left: 0.5rem; 
 }
 
-.login-btn {
+.nut_dang_nhap {
     padding: 0.5rem 1rem;
     background-color: #ff3333;
     color: #fff;
@@ -87,97 +87,97 @@ body {
     cursor: pointer;
 }
 
-.login-btn:hover {
+.nut_dang_nhap:hover {
     background-color: #cc0000;
 }
-/* Dropdown */
-.dropdown {
+
+.lua_chon {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content {
+.lua_chon-content {
     display: none;
     position: absolute;
     background-color: #333;
     padding: 0.5rem;
     border-radius: 5px;
-    min-width: 180px; /* Giữ chiều rộng tối thiểu */
-    width: 100%; /* Đặt chiều rộng bằng 100% để phù hợp với nút chính */
+    min-width: 180px; 
+    width: 100%; 
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     top: 100%;
     left: 0;
-    max-height: 200px; /* Giới hạn chiều cao để tạo cuộn */
-    overflow-y: auto; /* Cho phép cuộn dọc khi nội dung quá dài */
+    max-height: 200px; 
+    overflow-y: auto; 
 }
 
-/* Hiển thị menu khi hover */
-.dropdown:hover .dropdown-content {
+
+.lua_chon:hover .lua_chon-content {
     display: block;
 }
 
-/* Thiết kế các mục trong dropdown */
-.dropdown-content a {
+
+.lua_chon-content a {
     color: white;
-    padding: 10px 15px; /* Tăng khoảng cách giữa các lựa chọn */
+    padding: 10px 15px; 
     text-decoration: none;
     display: block;
-    margin: 5px 0; /* Thêm khoảng cách giữa các mục */
-    border-radius: 5px; /* Bo tròn các lựa chọn */
-    white-space: nowrap; /* Ngăn không cho xuống dòng */
+    margin: 5px 0; 
+    border-radius: 5px; 
+    white-space: nowrap; 
     overflow: hidden;
-    text-overflow: ellipsis; /* Hiển thị dấu ba chấm nếu quá dài */
+    text-overflow: ellipsis; 
 }
 
-/* Thiết kế thanh cuộn trong dropdown */
-.dropdown-content::-webkit-scrollbar {
-    width: 8px; /* Độ rộng thanh cuộn */
+
+.lua_chon-content::-webkit-scrollbar {
+    width: 8px; 
 }
 
-.dropdown-content::-webkit-scrollbar-track {
-    background: transparent; /* Nền thanh cuộn trong suốt */
+.lua_chon-content::-webkit-scrollbar-track {
+    background: transparent; 
 }
 
-.dropdown-content::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.3); /* Màu trắng trong suốt cho thanh cuộn */
-    border-radius: 10px; /* Bo tròn thanh cuộn */
-    border: 2px solid transparent; /* Tạo khoảng cách giữa thanh cuộn và track */
-    background-clip: content-box; /* Để viền trong suốt */
+.lua_chon-content::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 10px; 
+    border: 2px solid transparent; 
+    background-clip: content-box; 
 }
 
-.dropdown-content::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* Thay đổi màu thanh cuộn khi hover */
+.lua_chon-content::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5); 
 }
 }
 
-/* Thông báo */
-.notification-banner {
+
+.bang_thong_bao {
     max-width: 80%;
     margin: 0 auto; 
     padding: 1rem;
     background-color: #333;
     color: #ffcc00;
     text-align: center;
-    font-size: 1.8rem; /* Tăng kích thước chữ */
-    line-height: 1.5; /* Tăng khoảng cách giữa các hàng chữ */
+    font-size: 1.8rem; 
+    line-height: 1.5; 
 }
-/*thanh trượt anime mới*/
-.latest-movies {
+
+.phim_moi_nhat {
     max-width: 80%;
     margin: 1rem auto;
     font-size: 1.5rem;
     text-align: left;
     color: rgb(32, 210, 0);
-    margin-bottom: 1rem; /* Tạo khoảng cách giữa latest-movies và slider */
+    margin-bottom: 1rem; 
 }
-/* Khung thanh trượt */
-.slider {
-    overflow: hidden; /* Ẩn phần nội dung tràn ra ngoài */
+
+.thanh_truot {
+    overflow: hidden; 
     width: 100%;
     border: 2px solid #2b2b2b;
     background-color: #2b2b2b;
-    padding: 1rem 0; /* Giảm khoảng cách bên trong theo chiều dọc */
+    padding: 1rem 0; 
     margin: 0.5rem auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     position: relative;
@@ -185,80 +185,80 @@ body {
     align-items: center;
 }
 
-.slider-content {
+.thanh_truot-content {
     display: flex;
     transition: transform 0.3s ease;
 }
 
-.movie-item {
+.muc_phim {
     display: inline-block;
     width: 180px;
-    margin: 0 10px; /* Giữ lại khoảng cách giữa các item */
+    margin: 0 10px; 
     text-align: center;
     color: rgb(255, 255, 255);
     text-decoration: none;
     position: relative;
 }
 
-.movie-item img {
+.muc_phim img {
     width: 100%;
     border-radius: 8px;
     max-height: 250px;
 }
 
-.movie-item p {
+.muc_phim p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 1rem;
     margin-top: 8px;
 }
-.episode-count {
+.so_tap {
     position: absolute;
     top: 10px;
     right: 10px;
     background-color: #ff3333;
     color: white;
     border-radius: 50%;
-    width: 50px; /* Điều chỉnh kích thước phù hợp */
+    width: 50px; 
     height: 50px;
     display: flex;
-    flex-direction: column; /* Sắp xếp nội dung theo chiều dọc */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
-    font-size: 1rem; /* Kích thước chữ nhỏ hơn để phù hợp với 2 dòng */
+    font-size: 1rem; 
     text-align: center;
     overflow: hidden;
     z-index: 1;
-    line-height: 1; /* Giảm khoảng cách dòng */
+    line-height: 1; 
 }
 
-.rating-display {
-    position: absolute; /* Đặt vị trí tuyệt đối */
-    top: 15px; /* Khoảng cách từ trên xuống */
-    left: 0px; /* Khoảng cách từ bên trái */
-    background-color: rgba(0, 0, 0, 0.5); /* Nền trong suốt */
-    color: gold; /* Màu chữ vàng */
-    border-radius: 50%; /* Tạo góc bo cho nền */
-    padding: 5px 8px; /* Khoảng cách bên trong */
-    font-size: 0.9rem; /* Kích thước chữ */
-    text-align: center; /* Căn giữa chữ */
-    z-index: 1; /* Đảm bảo nó nằm trên cùng */
+.hien_thi_danh_gia {
+    position: absolute; 
+    top: 15px; 
+    left: 0px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: gold; 
+    border-radius: 50%; 
+    padding: 5px 8px; 
+    font-size: 0.9rem; 
+    text-align: center; 
+    z-index: 1; 
     font-weight: bold;
 }
 
-.episode-count span {
-    display: block; /* Mỗi phần tử span sẽ là một dòng */
-    font-weight: bold; /* In đậm chữ "01" */
+.so_tap span {
+    display: block; 
+    font-weight: bold; 
 }
 
-.episode-count span:last-child {
-    margin-top: 4px; /* Khoảng cách giữa "Tập" và "01" */
+.so_tap span:last-child {
+    margin-top: 4px; 
 }
 
-/* Nút điều hướng */
-.slider-btn {
-    background-color: rgba(0, 0, 0, 0.5); /* Nền tối hơn để hòa hợp với nền chính */
+
+.thanh_truot-nut_xem_them {
+    background-color: rgba(0, 0, 0, 0.5); 
     color: white;
     border: none;
     cursor: pointer;
@@ -269,88 +269,88 @@ body {
     top: 50%;
     transform: translateY(-50%);
     transition: background-color 0.2s ease;
-    z-index: 1; /* Đảm bảo nút luôn nằm trên cùng */
+    z-index: 1; 
 }
 
-.slider-btn:hover {
+.thanh_truot-nut_xem_them:hover {
     background-color: #ff3333;
 }
 
-.prev {
-    left: 0; /* Điều chỉnh để sát lề trái của slider */
-    margin-left: 10px; /* Khoảng cách nhẹ từ lề trái */
+.truoc_do {
+    left: 0; 
+    margin-left: 10px; 
 }
 
-.next {
-    right: 0; /* Điều chỉnh để sát lề phải của slider */
-    margin-right: 10px; /* Khoảng cách nhẹ từ lề phải */
+.sau_do {
+    right: 0; 
+    margin-right: 10px; 
 }
 
-/* Thanh gạch ngang phân cách */
-.filter-divider {
-    width: 80%; /* Chiều rộng thanh gạch ngang */
-    height: 2px; /* Chiều cao thanh gạch ngang */
-    background-color: #2b2b2b; /* Màu của thanh gạch ngang */
-    margin: 20px auto; /* Căn giữa thanh gạch ngang */
+
+.thanh_phan_cach {
+    width: 80%; 
+    height: 2px; 
+    background-color: #2b2b2b; 
+    margin: 20px auto; 
 }
-/* Các nút mới cập nhật, tất cả, anime trọn bộ, anime lẻ, HH trung quốc */
-.nav-chucnang {
+
+.thanh_chuc_nang {
     display: flex;
-    align-items: center; /* Căn chỉnh thẳng hàng với các khối ở trên */
-    margin-left: 9rem; /* Tạo khoảng cách bên trái để các nút lệch về phía bên trái */
+    align-items: center; 
+    margin-left: 9rem; 
 }
 
-.nav-btn {
-    color: white; /* Màu chữ */
-    text-decoration: none; /* Bỏ gạch chân */
-    margin: 0 0.5rem; /* Khoảng cách giữa các nút */
+.nut_dieu_huong {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 0.5rem; 
 }
-.nav-btn:hover {
-    color: rgb(255, 213, 0); /* Đổi màu chữ thành đen khi hover */
+.nut_dieu_huong:hover {
+    color: rgb(255, 213, 0); 
 }
 span {
-    color: white; /* Màu chữ cho dấu "/" */
-}
-/* Container chứa tất cả các movie-item-wrapper */
-.movie-gallery {
-    display: flex;
-    flex-wrap: wrap; /* Cho phép các item xuống dòng nếu không đủ chỗ */
-    justify-content: space-between; /* Phân bố đều các item trong hàng */
-    margin: 20px auto; /* Căn giữa gallery và tạo khoảng cách */
-    max-width: 80%; /* Đặt chiều rộng tối đa của gallery */
-    padding: 1rem; /* Khoảng cách giữa các movie-item-wrapper và background */
-    background-color: #2b2b2b; /* Màu nền của container */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Tạo bóng đổ cho container */
+    color: white; 
 }
 
-/* Thiết kế các phần tử movie-item-wrapper */
-.movie-item-wrapper {
+.bo_suu_tap_phim {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin: 20px auto; 
+    max-width: 80%; 
+    padding: 1rem; 
+    background-color: #2b2b2b; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+
+.muc_phim-wrapper {
     display: inline-block;
     width: 180px;
-    margin: 0 5px; /* Giữ lại khoảng cách giữa các item */
+    margin: 0 5px; 
     text-align: center;
     color: rgb(255, 255, 255);
     text-decoration: none;
     position: relative;
 }
 
-.movie-item-wrapper img {
-    width: 100%; /* Ảnh chiếm toàn bộ chiều rộng của khung */
-    border-radius: 8px; /* Bo tròn các góc ảnh */
+.muc_phim-wrapper img {
+    width: 100%; 
+    border-radius: 8px; 
 }
 
-.movie-item-wrapper a {
-    display: block; /* Để liên kết chiếm toàn bộ chiều rộng của khung */
+.muc_phim-wrapper a {
+    display: block; 
     white-space: nowrap;
     overflow: hidden;
     font-size: 1rem;
-    color: #fff; /* Màu chữ */
-    text-decoration: none; /* Bỏ gạch chân */
-    margin-top: 8px; /* Khoảng cách giữa ảnh và tên phim */
-    text-overflow: ellipsis; /* Thêm dấu "..." khi chữ dài quá */
+    color: #fff; 
+    text-decoration: none; 
+    margin-top: 8px; 
+    text-overflow: ellipsis; 
 }
 
-.btn {
+.nut_xem_them {
     display: block;
     width: 80vw;
     max-width: 100%;
@@ -363,9 +363,9 @@ span {
     text-align: center;
     transition: background-color 0.3s ease;
 }
-/* mobile */
-/* Hamburger Menu */
-.hamburger-menu {
+
+
+.menu_ba_gach {
     display: none;
     font-size: 1.5rem;
     color: #fff;
@@ -374,72 +374,88 @@ span {
     z-index: 1000;
     cursor: pointer;
 }
-
-/* Mobile Menu */
-.mobile-menu {
-    display: none;
+.menu_ben {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 50%; /* Chiếm 50% màn hình khi mở */
+    left: -100%;
+    width: 300px;
     height: 100%;
-    background-color: #1c1c1c;
+    background-color: rgba(0, 0, 0, 0.9);
     color: #fff;
-    padding-top: 3rem;
-    text-align: center;
-    z-index: 999;
-    transition: transform 0.3s ease;
-    transform: translateX(-100%); /* Ẩn menu ban đầu */
-}
-
-/* Nội dung trong menu */
-.mobile-menu nav a {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
-    font-size: 1.2rem;
-    color: #ffcc00;
-    text-decoration: none;
-    border-bottom: 1px solid #444;
+    transition: left 0.3s ease;
+    z-index: 1001;
+    overflow-y: auto;
+    scrollbar-width: thin; 
 }
 
-.mobile-menu nav a:hover {
-    background-color: #333;
-}
-
-/* Nút đóng menu */
-.close-menu-btn {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
+.menu_ben a {
     color: #fff;
-    background: none;
+    padding: 1rem 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu_ben .nut_dang_nhap-2 {
+    background-color: #ff3333;
+    font-size: 1rem;
+    color: #fff;
     border: none;
+    padding: 1rem 3rem;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-/* Hiển thị menu khi mở */
-.mobile-menu.open {
-    transform: translateX(0); /* Hiện menu khi mở */
+.menu_ben .nut_dong {
+    font-size: 2rem;
+    color: #ff3333;
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
 }
 
-/* Thiết lập cho thiết bị di động */
-@media (max-width: 768px) {
-    /* Ẩn các mục không cần thiết trên điện thoại */
-    .navbar nav,
-    .search-bar,
+
+.menu_ben.open {
+    left: 0;
+}
+
+.menu_phu {
+    display: none;
+    flex-direction: column;
+}
+.menu_phu-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu_phu-row a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    flex: 1;
+    text-align: left;
+}
+.menu_phu.open {
+    display: flex;
+}
+@media (max-width: 1450px) {
+    
+    .thanh_dieu_huong nav {
+        display: none;
+    }
+    .thanh_tim_kiem,
     .nav-buttons,
-    .login-btn {
+    .nut_dang_nhap {
     display: none !important;
     }
-
-    /* Nút menu 3 gạch hiển thị bên phải và cố định */
-    .hamburger-menu {
+    .menu_ba_gach {
         display: block !important;
         position: absolute;
     }
-
-    /* Logo căn trái hoàn toàn */
     .logo {
         position: absolute;
         left: 1rem;
@@ -449,8 +465,8 @@ span {
         z-index: 1000;
     }
 
-    /* Thanh điều hướng (navbar) phủ toàn bộ chiều rộng */
-    .navbar {
+    
+    .thanh_dieu_huong {
         padding: 0 1rem;
         background-color: #2b2b2b;
         display: flex;
@@ -458,30 +474,30 @@ span {
         justify-content: space-between;
         height: 60px;
     }
-    /* Phần thông báo có thêm khoảng cách phía trên */
-    .notification-banner {
+    
+    .bang_thong_bao {
         max-width: 95%;
         margin: 0 auto;
         line-height: 1.5;
     }
 
-    /* Căn giữa các thành phần trong nội dung chính */
-    .latest-movies, .slider {
-        max-width: 95%; /* Đảm bảo các khối nội dung bên trong không vượt quá chiều rộng tối đa */
-        margin: 0 auto; /* Căn giữa từng phần tử */
+    
+    .phim_moi_nhat, .thanh_truot {
+        max-width: 95%; 
+        margin: 0 auto; 
     }
-    .nav-chucnang {
+    .thanh_chuc_nang {
         display: block;
         line-height: 2;
-        max-width: 95%; /* Đảm bảo các khối nội dung bên trong không vượt quá chiều rộng tối đa */
-        margin: 0 auto; /* Căn giữa từng phần tử */
+        max-width: 95%; 
+        margin: 0 auto; 
     }
-    .movie-gallery {
+    .bo_suu_tap_phim {
         justify-content: space-evenly;
         max-width: 95%;
         margin: 0 auto;
     }
-    .movie-item-wrapper {
+    .muc_phim-wrapper {
         width: 159px;
     }
 }

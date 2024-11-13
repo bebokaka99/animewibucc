@@ -10,7 +10,7 @@ function applyFilter() {
     const selectedSeason = document.querySelector('input[name="season"]:checked').value;
     const selectedYear = document.querySelector('input[name="year"]:checked').value;
     
-    const selectedGenres = Array.from(document.querySelectorAll('#genre-options input[type="checkbox"]:checked'))
+    const selectedGenres = Array.from(document.querySelectorAll('#tuy_chon_the_loai input[type="checkbox"]:checked'))
                                 .map(cb => cb.value);
 
     const filteredAnime = animeData.filter(anime => {
@@ -129,4 +129,39 @@ function goToNextGroup() {
 // Hiển thị trang đầu tiên khi tải trang
 document.addEventListener("DOMContentLoaded", function() {
     renderPagination();
+});
+// Lấy các phần tử
+const hamburgerMenu = document.querySelector('.menu_ba_gach');
+const sideMenu = document.getElementById('side-menu');
+const closeBtn = document.getElementById('close-btn');
+
+// Mở menu khi nhấn vào nút hamburger-menu
+hamburgerMenu.addEventListener('click', () => {
+    sideMenu.classList.add('open');
+});
+
+// Đóng menu khi nhấn vào nút đóng
+closeBtn.addEventListener('click', () => {
+    sideMenu.classList.remove('open');
+});
+// Lấy tất cả các mục có class 'toggle-menu'
+const toggleMenus = document.querySelectorAll('.chuyen_menu');
+
+toggleMenus.forEach((menu) => {
+    menu.addEventListener('click', (event) => {
+        event.preventDefault();
+        
+        // Lấy ID của sub-menu từ thuộc tính 'data-target'
+        const targetId = menu.getAttribute('data-target');
+        const subMenu = document.getElementById(targetId);
+
+        // Kiểm tra nếu sub-menu đang mở, đóng nó lại
+        if (subMenu.classList.contains('open')) {
+            subMenu.classList.remove('open');
+        } else {
+            // Đóng tất cả các sub-menu khác trước khi mở sub-menu mới
+            document.querySelectorAll('.menu_phu').forEach((sm) => sm.classList.remove('open'));
+            subMenu.classList.add('open');
+        }
+    });
 });

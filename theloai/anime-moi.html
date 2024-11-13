@@ -11,13 +11,13 @@
 <body>
 
     <!-- Thanh điều hướng -->
-    <header class="navbar">
-        <div class="container">
+    <header class="thanh_dieu_huong">
+        <div class="hop_chua">
             <div class="logo">AnimeWibuCC</div>
             <nav>
-                <div class="dropdown">
+                <div class="lua_chon">
                     <a href="#">DẠNG ANIME <i class="fa-solid fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
+                    <div class="lua_chon-content">
                         <a href="#">TV Series</a>
                         <a href="#">Movie/OVA</a>
                         <a href="#">HH Trung Quốc</a>
@@ -26,9 +26,9 @@
                         <a href="#">Anime Trọn Bộ</a>
                     </div>
                 </div>
-                <div class="dropdown">
+                <div class="lua_chon">
                     <a href="#">TOP ANIME <i class="fa-solid fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
+                    <div class="lua_chon-content">
                         <a href="#">Theo Ngày</a>
                         <a href="#">Yêu Thích</a>
                         <a href="#">Theo Tháng</a>
@@ -36,17 +36,17 @@
                         <a href="#">Theo Năm</a>
                     </div>
                 </div>
-                <div class="dropdown">
+                <div class="lua_chon">
                     <a href="#">THỂ LOẠI <i class="fa-solid fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
+                    <div class="lua_chon-content">
                         <a href="#">Action</a>
                         <a href="#">Adventure</a>
                         <a href="#">Cartoon</a>
                     </div>
                 </div>
-                <div class="dropdown">
+                <div class="lua_chon">
                     <a href="#">SEASON <i class="fa-solid fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
+                    <div class="lua_chon-content">
                         <a href="#">Mùa Xuân</a>
                         <a href="#">Mùa Hạ</a>
                         <a href="#">Mùa Thu</a>
@@ -56,41 +56,208 @@
                 <a href="#">THƯ VIỆN</a>
                 <a href="#">LỊCH CHIẾU</a>
             </nav>
-            <div class="search-bar">
+            <div class="thanh_tim_kiem">
                 <input type="text" placeholder="Tìm kiếm..." />
-                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="nut_tim_kiem"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <div class="nav-buttons">
-                <button class="login-btn">Đăng nhập</button>
+                <button class="nut_dang_nhap">Đăng nhập</button>
+            </div>
+            <div class="menu_ba_gach">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="side-menu" class="menu_ben">
+                <button id="close-btn" class="nut_dong">&times;</button>
+                <button class="nut_dang_nhap-2">Đăng nhập</button>
+                <a href="#">Trang chủ</a>
+                <a href="#" class="menu-item toggle-menu" data-target="sub-menu-anime">DẠNG ANIME <i class="fa-solid fa-chevron-down"></i></a>
+                <div id="sub-menu-anime" class="menu_phu">
+                    <div class="menu_phu-row">
+                        <a href="#">TV Series</a>
+                        <a href="#">Movie/OVA</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">HH Trung Quốc</a>
+                        <a href="#">Anime Sắp Chiếu</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Anime Đang Chiếu</a>
+                        <a href="#">Anime Trọn Bộ</a>
+                    </div>
+                </div>
+                <a href="#" class="menu-item toggle-menu" data-target="sub-menu-top-anime">TOP ANIME <i class="fa-solid fa-chevron-down"></i></a>
+                <div id="sub-menu-top-anime" class="menu_phu">
+                    <div class="menu_phu-row">
+                        <a href="#">Theo Ngày</a>
+                        <a href="#">Yêu Thích</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Theo Tháng</a>
+                        <a href="#">Theo Mùa</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Theo Năm</a>
+                    </div>
+                </div>
+                <a href="#" class="menu-item toggle-menu" data-target="sub-menu-the-loai">THỂ LOẠI <i class="fa-solid fa-chevron-down"></i></a>
+                <div id="sub-menu-the-loai" class="menu_phu">
+                    <div class="menu_phu-row">
+                        <a href="#">Action</a>
+                        <a href="#">Adventure</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Cartoon</a>
+                        <a href="#">Comedy</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Dermentia</a>
+                        <a href="#">Demons</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Drama</a>
+                        <a href="#">Ecchi</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Fantasy</a>
+                        <a href="#">Game</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Harem</a>
+                        <a href="#">Historical</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Horror</a>
+                        <a href="#">Josei</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Kids</a>
+                        <a href="#">Live Action</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Magic</a>
+                        <a href="#">Martial Arts</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Mecha</a>
+                        <a href="#">Military</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Music</a>
+                        <a href="#">Mystery</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Parody</a>
+                        <a href="#">Police</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Psychological</a>
+                        <a href="#">Romance</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Samurai</a>
+                        <a href="#">School</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Sci-Fi</a>
+                        <a href="#">Sei-nen</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Shoujo</a>
+                        <a href="#">Shoujo Ai</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Slice of Life</a>
+                        <a href="#">Space</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Sports</a>
+                        <a href="#">Super Power</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Supernatural</a>
+                        <a href="#">Suspense</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Thriller</a>
+                        <a href="#">Tokusatsu</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Vampire</a>
+                        <a href="#">Yaoi</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Yuri</a>
+                    </div>
+                </div>
+                <a href="#" class="menu-item toggle-menu" data-target="sub-menu-season">SEASON <i class="fa-solid fa-chevron-down"></i></a>
+                <div id="sub-menu-season" class="menu_phu">
+                    <div class="menu_phu-row">
+                        <a href="#">Mùa Đông 2024</a>
+                        <a href="#">Mùa Thu 2024</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Mùa Hạ 2024</a>
+                        <a href="#">Mùa Xuân 2024</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Mùa Đông 2023</a>
+                        <a href="#">Mùa Thu 2023</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Mùa Hạ 2023</a>
+                        <a href="#">Mùa Xuân 2023</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Mùa Đông 2022</a>
+                        <a href="#">Mùa Thu 2022</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Mùa Hạ 2022</a>
+                        <a href="#">Mùa Xuân 2022</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Mùa Đông 2021</a>
+                        <a href="#">Mùa Thu 2021</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Mùa Hạ 2021</a>
+                        <a href="#">Mùa Xuân 2021</a>
+                    </div>
+                    <div class="menu_phu-row">
+                        <a href="#">Khác...</a>
+                    </div>
+                </div>
+                <a href="#">THƯ VIỆN</a>
+                <a href="#">LỊCH CHIẾU</a>
             </div>
         </div>
     </header>
 
     <!-- Thông báo -->
-    <section class="notification-banner">
+    <section class="bang_thong_bao">
         <p>Lưu hoặc nhớ ngay đây chỉ là website chưa hoàn thiện nên nhớ là vậy nhé!</p>
         <p>Mời bạn tham gia Group <a href="#">tại đây!</a> hoặc tham gia Discord <a href="#">tại đây!</a> để ủng hộ AnimeWibuCC</p>
     </section>
-    <div class="filter-divider"></div>
-    <div class="filter-divider"></div>
-<div class="nav-chucnang">
-    <a href="../../index.html" class="nav-btn"><i class="fa-solid fa-house"></i> Trang chủ</a>
+    <div class="thanh_phan_cach"></div>
+    <div class="thanh_phan_cach"></div>
+<div class="thanh_chuc_nang">
+    <a href="../index.html" class="nut_dieu_huong"><i class="fa-solid fa-house"></i> Trang chủ</a>
     <span>/</span>
-    <a href="#" class="nav-btn">Tất cả</a>
+    <a href="#" class="nut_dieu_huong">Tất cả</a>
     <span>/</span>
-    <a href="#" class="nav-btn">Anime mới nhất</a>
+    <a href="#" class="nut_dieu_huong">Anime mới nhất</a>
     <span>/</span>
 
 </div>
     <!-- Thanh ngang phân cách -->
-    <div class="filter-divider"></div>
+    <div class="thanh_phan_cach"></div>
     <button id="filterToggleBtn" class="filter-btn"><i class="fa-solid fa-sort"></i> Lọc Anime</button>
     <div id="filterContainer" class="filter-container" style="display: none;">
         <section class="anime-filter">
-            <div class="filter-wrapper">
+            <div class="khung_loc">
                 <div class="filter-category-wrapper">
-                    <div class="filter-divider"></div>
-                    <div class="filter-category-1">
+                    <div class="thanh_phan_cach"></div>
+                    <div class="muc_loc_1">
                         <h3>Sắp xếp theo</h3>
                         <ul>
                             <li><input type="radio" name="sort" value="latest" checked> Mới nhất</li>
@@ -100,7 +267,7 @@
                             <li><input type="radio" name="sort" value="most-voted"> Nhiều lượt bình chọn</li>
                         </ul>
                     </div>
-                    <div class="filter-category-2">
+                    <div class="muc_loc_2">
                         <h3>Loại</h3>
                         <ul>
                             <li><input type="radio" name="type" value="all" checked> Tất cả</li>
@@ -110,7 +277,7 @@
                             <li><input type="radio" name="type" value="upcoming"> HH Trung Quốc</li>
                         </ul>
                     </div>
-                    <div class="filter-category-3">
+                    <div class="muc_loc_3">
                         <h3>Mùa</h3>
                         <ul>
                             <li><input type="radio" name="season" value="all" checked> Tất cả</li>
@@ -122,7 +289,7 @@
                     </div>
                 </div>
                 <h3>Thể loại</h3>
-                    <div class="filter-category-4">
+                    <div class="muc_loc_4">
                         <ul id="genre-options">
                             <li><input type="checkbox" value="Action"> Action</li>
                             <li><input type="checkbox" value="Adventure"> Adventure</li>
@@ -171,7 +338,7 @@
                         </ul>
                     </div>
                     <h3>Năm phát hành</h3>
-                    <div class="filter-category-5">
+                    <div class="muc_loc_5">
                         <ul>
                             <li><input type="radio" name="year" value="all" checked> Tất cả</li>
                             <li><input type="radio" name="year" value="2024"> 2024</li>
@@ -179,274 +346,274 @@
                             <li><input type="radio" name="year" value="2022"> 2022</li>
                         </ul>
                     </div>
-                    <div class="filter-divider"></div>
+                    <div class="thanh_phan_cach"></div>
                     <button id="filterButton" onclick="applyFilter()">Lọc Anime</button>
                 </div>
             </div>
         </section>
     </div>
-    <div class="movie-gallery">
-        <div class="movie-item-wrapper">
+    <div class="bo_suu_tap_phim">
+        <div class="muc_phim-wrapper">
             <a href="../anime/dandadan/dandadan-thongtin.html">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/c35846a0-e86d-4076-8a84-7b7a43c90230.image.png?v=1730998191458" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>06</span>
                 </div>
-                <span class="rating-display">★9.7</span>
+                <span class="hien_thi_danh_gia">★9.7</span>
                 <a>Dadadan</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
-            <a href="haikyu-movie.html">
+        <div class="muc_phim-wrapper">
+            <a href="../anime/haikyu/haikyu-movie.html">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/539a10fc-19a1-4370-94dd-90ba1af33fff.image.png?v=1730827889708" alt="Movie Title 1">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Hoàn</span>
                     <span>Thành</span>
                 </div>
-                <span class="rating-display">★9.6</span>
+                <span class="hien_thi_danh_gia">★9.6</span>
                 <a>Haikyu!! Movie: Trận Chiến Bãi Phế Liệu</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/450cca39-628c-463b-aea9-717098ec908a.image.png?v=1731080237241" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>07</span>
                 </div>
-                <span class="rating-display">★9.2</span>
+                <span class="hien_thi_danh_gia">★9.2</span>
                 <a>Hitoribocchi no Isekai Kouryaku</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/439d3c04-a213-4ed3-af93-e4ce6be36c7b.image.png?v=1731080303952" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>06</span>
                 </div>
-                <span class="rating-display">★9.5</span>
+                <span class="hien_thi_danh_gia">★9.5</span>
                 <a>Sayounara Ryuusei, Konnichiwa Jinsei</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/a87019fb-ac7f-4804-8ea5-2caa2554e92f.image.png?v=1730834092166" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>05</span>
                 </div>
-                <span class="rating-display">★9.6</span>
+                <span class="hien_thi_danh_gia">★9.6</span>
                 <a>Youkai Gakkou no Sensei Hajimemashita!</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/09872154-9028-4975-a79a-491cc8b6fda7.image.png?v=1730846658946" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>05</span>
                 </div>
-                <span class="rating-display">★9.6</span>
+                <span class="hien_thi_danh_gia">★9.6</span>
                 <a>Mecha-Ude: Mechanical Arms</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/f036050d-8a41-454e-8958-c3605b9eb8c4.image.png?v=1731080443045" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>07</span>
                 </div>
-                <span class="rating-display">★9.7</span>
+                <span class="hien_thi_danh_gia">★9.7</span>
                 <a>Blue Box</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/1d884e80-5d80-4e3b-90a2-9ae721ae5512.image.png?v=1731080597449" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>06</span>
                 </div>
-                <span class="rating-display">★9.5</span>
+                <span class="hien_thi_danh_gia">★9.5</span>
                 <a>Chúng Ta Sẽ Kết Hôn Thật Sao?</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/83183ed8-7d1a-4919-96d0-bcd3a3b30f2b.image.png?v=1731080743051" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>06</span>
                 </div>
-                <span class="rating-display">★9.6</span>
+                <span class="hien_thi_danh_gia">★9.6</span>
                 <a>NegaPosi Angler</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/871ba278-f4d9-49a8-a2f0-ad92452b62e9.image.png?v=1731080853345" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>06</span>
                 </div>
-                <span class="rating-display">★9.2</span>
+                <span class="hien_thi_danh_gia">★9.2</span>
                 <a>Rekishi ni Nokoru Akujo ni Naru zo</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/8c086852-7765-44c4-941a-02b2ce73d8bf.image.png?v=1731080968075" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>06</span>
                 </div>
-                <span class="rating-display">★8.5</span>
+                <span class="hien_thi_danh_gia">★8.5</span>
                 <a>Shin Tennis no Oujisama: U-17 World Cup Semifinal</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/09a5cc94-2ddd-445e-a249-130485e4c5af.image.png?v=1731081037964" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>05</span>
                 </div>
-                <span class="rating-display">★9.6</span>
+                <span class="hien_thi_danh_gia">★9.6</span>
                 <a>Yarinaoshi Reijou wa Ryuutei Heika wo Kouryakuchuu</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/31491f49-4f18-494f-8f3d-f82f6ec09261.image.png?v=1731081144203" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>28</span>
                 </div>
-                <span class="rating-display">★9.3</span>
+                <span class="hien_thi_danh_gia">★9.3</span>
                 <a>Sengoku Youko</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/e79b8285-0972-4616-bd7d-0e3dca70aaca.image.png?v=1731081231554" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>06</span>
                 </div>
-                <span class="rating-display">★9.7</span>
+                <span class="hien_thi_danh_gia">★9.7</span>
                 <a>Amagami-san Chi no Enmusubi</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/d2187b9e-3eab-4ba8-938c-6f45c282fb6a.image.png?v=1731081310762" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>06</span>
                 </div>
-                <span class="rating-display">★9.3</span>
+                <span class="hien_thi_danh_gia">★9.3</span>
                 <a>Re:ZERO -Starting Life in Another World- Season 3</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/78a42b08-e519-4d59-8279-f17591f4f1a2.image.png?v=1730846793356" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>05</span>
                 </div>
-                <span class="rating-display">★9.4</span>
+                <span class="hien_thi_danh_gia">★9.4</span>
                 <a>Raise wa Tanin ga Ii</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/c85e0c11-fa9f-470c-998f-d203e9aa900c.image.png?v=1730846947462" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>62</span>
                 </div>
-                <span class="rating-display">★4.7</span>
+                <span class="hien_thi_danh_gia">★4.7</span>
                 <a>Five Element God Of War</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/8f8129da-d018-4fdf-93cf-57b9a8f5660b.image.png?v=1730833955556" alt="Movie Title 1">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>05</span>
                 </div>
-                <span class="rating-display">★9.4</span>
+                <span class="hien_thi_danh_gia">★9.4</span>
                 <a>Seirei Gensouki: Spirit Chronicles Season 2</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/6d64ccaa-7d7c-4876-8c61-f7e5db34256a.image.png?v=1730835236714" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>06</span>
                 </div>
-                <span class="rating-display">★8.7</span>
+                <span class="hien_thi_danh_gia">★8.7</span>
                 <a>Saikyou no Shienshoku Wajutsushi de Aru Ore wa Sekai Saikyou Clan wo Shitagaeru, The Most Notorious Talker Runs the World's Greatest Clan</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/2f72a7ae-f8b6-4f17-a01b-767401c02847.image.png?v=1730847406967" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>05</span>
                 </div>
-                <span class="rating-display">★9.3</span>
+                <span class="hien_thi_danh_gia">★9.3</span>
                 <a>Kamonohashi Ron no Kindan Suiri 2nd Season</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/c3e40644-9e1a-4bd4-a855-090cc78b08dd.image.png?v=1730835914809" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>04</span>
                 </div>
-                <span class="rating-display">★9.2</span>
+                <span class="hien_thi_danh_gia">★9.2</span>
                 <a>Arifureta: From Commonplace to World's Strongest Season 3</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/4e43063c-cfc4-40ce-993b-291895b71751.image.png?v=1730835732170" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>05</span>
                 </div>
-                <span class="rating-display">★9.7</span>
+                <span class="hien_thi_danh_gia">★9.7</span>
                 <a>Natsume's Book of Friends Season 7</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/68e865d8-71c2-4745-8b7f-99d135dcc352.image.png?v=1730847797224" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>04</span>
                 </div>
-                <span class="rating-display">★8.4</span>
+                <span class="hien_thi_danh_gia">★8.4</span>
                 <a>The Seven Deadly Sins: Four Knights of the Apocalypse Season 2</a>
             </a>
         </div>
-        <div class="movie-item-wrapper">
+        <div class="muc_phim-wrapper">
             <a href="#">
                 <img src="https://cdn.glitch.global/870c9011-0938-4c9d-8891-e4c3872c9aff/bce3a2eb-abc9-4953-92a1-b236db590e07.image.png?v=1731079607342" alt="Movie Title">
-                <div class="episode-count">
+                <div class="so_tap">
                     <span>Tập</span>
                     <span>19</span>
                 </div>
-                <span class="rating-display">★9.5</span>
+                <span class="hien_thi_danh_gia">★9.5</span>
                 <a>2.5-jigen no Ririsa</a>
             </a>
         </div>
