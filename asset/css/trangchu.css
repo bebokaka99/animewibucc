@@ -35,8 +35,11 @@ body {
     color: #ff3333;
     margin-right: 2rem; 
 }
-
-
+.logo img {
+    max-width: 70px;
+    height: auto;
+    cursor: pointer;
+}
 .thanh_dieu_huong nav a {
     margin: 0 0.5rem;
     color: #fff;
@@ -161,6 +164,10 @@ body {
     text-align: center;
     font-size: 1.8rem; 
     line-height: 1.5; 
+}
+.bang_thong_bao a {
+    color: #00e022;
+    font-size: 1.8rem; 
 }
 
 .phim_moi_nhat {
@@ -447,7 +454,6 @@ span {
     .thanh_dieu_huong nav {
         display: none;
     }
-    .thanh_tim_kiem,
     .nav-buttons,
     .nut_dang_nhap {
     display: none !important;
@@ -456,16 +462,12 @@ span {
         display: block !important;
         position: absolute;
     }
-    .logo {
-        position: absolute;
+    .logo img {
         left: 1rem;
-        top: 1rem;
-        font-size: 1.5rem;
-        color: #ff3333;
-        z-index: 1000;
+        top: 0.3rem;
+        position: absolute;
+        height: auto !important;
     }
-
-    
     .thanh_dieu_huong {
         padding: 0 1rem;
         background-color: #2b2b2b;
