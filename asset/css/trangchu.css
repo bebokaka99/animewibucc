@@ -177,6 +177,7 @@ body {
     text-align: left;
     color: rgb(32, 210, 0);
     margin-bottom: 1rem; 
+    
 }
 
 .thanh_truot {
@@ -330,7 +331,6 @@ span {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
 }
 
-
 .muc_phim-wrapper {
     display: inline-block;
     width: 180px;
@@ -356,7 +356,87 @@ span {
     margin-top: 8px; 
     text-overflow: ellipsis; 
 }
+.sap_chieu {
+    margin-left: 9.5rem; 
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(to right, #ff9999, #cc0000);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+.sap_chieu:hover {
+    background: linear-gradient(to right, #ff6666, #990000);
+}
+.phim_sap_ra {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin: 20px auto; 
+    max-width: 80%; 
+    padding: 1rem; 
+    background-color: #2b2b2b; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
+}
+.muc_phim_sap_ra {
+    display: inline-block;
+    width: 180px;
+    margin: 0 5px; 
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+    margin-top: 8px;
+}
+.nut_phim_sap_ra {
+    position: absolute;
+    top: 15px;
+    right: 1px;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #ff6666, #cc0000);
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    z-index: 1;
+}
+.muc_phim_sap_ra img {
+    width: 100%; 
+    filter: blur(0.9px);
+    border-radius: 8px; 
+}
 
+.muc_phim_sap_ra a {
+    display: block; 
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1rem;
+    color: #fff; 
+    text-decoration: none; 
+    margin-top: 8px; 
+    text-overflow: ellipsis; 
+}
+.thoi_gian_ra_mat {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.thanh_sap_chieu {
+    bottom: 0;
+    width: 100%;
+    padding: 7px 0;
+    background-color: #ff3333;
+    color: #fff;
+    font-weight: bold;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 .nut_xem_them {
     display: block;
     width: 80vw;
@@ -370,7 +450,6 @@ span {
     text-align: center;
     transition: background-color 0.3s ease;
 }
-
 
 .menu_ba_gach {
     display: none;
@@ -501,5 +580,16 @@ span {
     }
     .muc_phim-wrapper {
         width: 159px;
+    }
+    .phim_sap_ra {
+        justify-content: space-evenly;
+        max-width: 95%;
+    }
+    .muc_phim_sap_ra {
+        width: 159px;
+    }
+    .sap_chieu {
+        max-width: 95%; 
+        margin-left: 0.5rem;
     }
 }
