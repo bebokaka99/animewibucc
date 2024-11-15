@@ -221,6 +221,9 @@ body {
     font-size: 1rem;
     margin-top: 8px;
 }
+.muc_phim p:hover {
+        color:#ffcc00
+}
 .so_tap {
     position: absolute;
     top: 10px;
@@ -340,6 +343,9 @@ span {
     text-decoration: none;
     position: relative;
 }
+.muc_phim-wrapper a:hover {
+    color: #ffee00;
+}
 
 .muc_phim-wrapper img {
     width: 100%; 
@@ -404,7 +410,7 @@ span {
 }
 .muc_phim_sap_ra img {
     width: 100%; 
-    filter: blur(0.9px);
+    filter: brightness(0.6);
     border-radius: 8px; 
 }
 
@@ -417,6 +423,9 @@ span {
     text-decoration: none; 
     margin-top: 8px; 
     text-overflow: ellipsis; 
+}
+.muc_phim_sap_ra a:hover {
+    color: #ffee00;
 }
 .thoi_gian_ra_mat {
     position: absolute;
@@ -483,13 +492,12 @@ span {
     text-decoration: none;
     font-size: 1.1rem;
 }
-
 .menu_ben .nut_dang_nhap-2 {
     background-color: #ff3333;
     font-size: 1rem;
     color: #fff;
     border: none;
-    padding: 1rem 3rem;
+    padding: 1rem 5rem;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -560,13 +568,11 @@ span {
         max-width: 95%;
         margin: 0 auto;
         line-height: 1.5;
+    } 
+    .phim_moi_nhat {
+        max-width: 95%;
     }
 
-    
-    .phim_moi_nhat, .thanh_truot {
-        max-width: 95%; 
-        margin: 0 auto; 
-    }
     .thanh_chuc_nang {
         display: block;
         line-height: 2;

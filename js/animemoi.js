@@ -43,7 +43,7 @@ document.getElementById('filterToggleBtn').addEventListener('click', function() 
 });
 function applyFilter() {
     // Xử lý logic lọc anime ở đây
-    alert("Lọc đéo được đâu cảm ơn đã test!");
+    alert("Tính năng này đang được phát triển, xin lỗi vì bất tiện này!");
 }
 let currentPage = 1;
 let totalPages = 10; // Tổng số trang
