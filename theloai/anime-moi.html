@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnimeWibuCC</title>
+    <title>Danh sách anime Mới cập nhật</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../asset/css/animemoi.css">
-    <link rel="icon" href="anh.png">
+    <link rel="icon" href="../logowibuanimecc.png">
 </head>
 <body>
 
     <!-- Thanh điều hướng -->
     <header class="thanh_dieu_huong">
         <div class="hop_chua">
-            <div class="logo">AnimeWibuCC</div>
+            <a href="../index.html" class="logo">
+                <img src="../logowibuanimecc.png" alt="WibuanimeCC Logo">
+            </a>
             <nav>
+                <a href="../index.html">TRANG CHỦ</a>
                 <div class="lua_chon">
                     <a href="#">DẠNG ANIME <i class="fa-solid fa-chevron-down"></i></a>
                     <div class="lua_chon-content">
@@ -63,12 +66,13 @@
             <div class="nav-buttons">
                 <button class="nut_dang_nhap">Đăng nhập</button>
             </div>
+            <!--Mobile-->
             <div class="menu_ba_gach">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <div id="side-menu" class="menu_ben">
-                <button id="close-btn" class="nut_dong">&times;</button>
-                <button class="nut_dang_nhap-2">Đăng nhập</button>
+            <div id="menu_ben" class="menu_ben">
+                <button id="nut_dong" class="nut_dong">&times;</button>
+                <button class="nut_dang_nhap_2">ĐĂNG NHẬP</button>
                 <a href="#">Trang chủ</a>
                 <a href="#" class="menu-item toggle-menu" data-target="sub-menu-anime">DẠNG ANIME <i class="fa-solid fa-chevron-down"></i></a>
                 <div id="sub-menu-anime" class="menu_phu">
@@ -251,6 +255,7 @@
 </div>
     <!-- Thanh ngang phân cách -->
     <div class="thanh_phan_cach"></div>
+    <!--Nút lọc-->
     <button id="filterToggleBtn" class="filter-btn"><i class="fa-solid fa-sort"></i> Lọc Anime</button>
     <div id="filterContainer" class="filter-container" style="display: none;">
         <section class="anime-filter">

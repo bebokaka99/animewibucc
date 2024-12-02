@@ -6,6 +6,7 @@
 }
 html {
     font-family: 'Alata', sans-serif;
+    
 body {
     font-family: "Alata", sans-serif;
     background-color: #1c1c1c;
@@ -19,7 +20,6 @@ body {
     padding: 1rem 0;
     margin-bottom: 1rem;
 }
-
 .hop_chua {
     max-width: 80%;
     margin: 0 auto;
@@ -27,16 +27,17 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
-
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ff3333;
     margin-right: 2rem; 
 }
-
-
+.logo img {
+    max-width: 70px;
+    height: auto;
+    cursor: pointer;
+}
 .thanh_dieu_huong nav a {
     margin: 0 0.5rem;
     color: #fff;
@@ -57,7 +58,6 @@ body {
     border-radius: 5px 0 0 5px;
     outline: none;
 }
-
 .nut_tim_kiem {
     padding: 0.5rem 1rem;
     background-color: #ff3333;
@@ -67,7 +67,6 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 .nut_tim_kiem:hover {
     background-color: #cc0000;
 }
@@ -111,13 +110,9 @@ body {
     max-height: 200px; 
     overflow-y: auto; 
 }
-
-
 .lua_chon:hover .lua_chon-content {
     display: block;
 }
-
-
 .lua_chon-content a {
     color: white;
     padding: 10px 15px; 
@@ -291,15 +286,6 @@ span {
     padding: 20px;
     font-family: Arial, sans-serif;
 }
-
-button {
-    padding: 10px 20px;
-    margin: 0 5px;
-    background-color: #ddd;
-    border: 1px solid #ddd;
-    cursor: pointer;
-    border-radius: 2px;
-}
 button.selected {
     background-color: red;
     color: #78909C;
@@ -446,7 +432,7 @@ button.selected {
     font-size: 1rem;
     color: #fff;
     border: none;
-    padding: 1rem 3rem;
+    padding: 1rem 5rem;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -505,18 +491,12 @@ button.selected {
         display: block !important;
         position: absolute;
     }
-
-    
-    .logo {
-        position: absolute;
+    .logo img {
         left: 1rem;
-        top: 1rem;
-        font-size: 1.5rem;
-        color: #ff3333;
-        z-index: 1000;
+        top: 0.3rem;
+        position: absolute;
+        height: auto !important;
     }
-
-    
     .thanh_dieu_huong {
         padding: 0 1rem;
         background-color: #2b2b2b;

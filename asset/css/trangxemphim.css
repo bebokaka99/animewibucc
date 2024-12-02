@@ -36,7 +36,11 @@ body {
     color: #ff3333;
     margin-right: 2rem; 
 }
-
+.logo-trang img {
+    max-width: 70px;
+    height: auto;
+    cursor: pointer;
+}
 
 .thanh-dieu-huong nav a {
     margin: 0 0.5rem;

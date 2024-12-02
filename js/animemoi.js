@@ -126,40 +126,57 @@ function goToNextGroup() {
     }
 }
 
-// Hiển thị trang đầu tiên khi tải trang
-document.addEventListener("DOMContentLoaded", function() {
-    renderPagination();
-});
+// Tự động chạy thanh_truot khi trang tải
+document.addEventListener('DOMContentLoaded', autoSlide);
 // Lấy các phần tử
 const hamburgerMenu = document.querySelector('.menu_ba_gach');
-const sideMenu = document.getElementById('side-menu');
-const closeBtn = document.getElementById('close-btn');
+const sideMenu = document.getElementById('menu_ben');
+const closeBtn = document.getElementById('nut_dong');
 
-// Mở menu khi nhấn vào nút hamburger-menu
+// Mở menu khi nhấn vào nút menu_ba_gach
 hamburgerMenu.addEventListener('click', () => {
-    sideMenu.classList.add('open');
+    // Kiểm tra nếu menu đang mở
+    if (sideMenu.classList.contains('open')) {
+        // Đóng menu
+        sideMenu.classList.remove('open');
+        document.body.style.overflow = ''; // Bật lại cuộn trang
+    } else {
+        // Mở menu
+        sideMenu.classList.add('open');
+        document.body.style.overflow = 'hidden'; // Tắt cuộn trang
+    }
 });
 
 // Đóng menu khi nhấn vào nút đóng
 closeBtn.addEventListener('click', () => {
     sideMenu.classList.remove('open');
+    document.body.style.overflow = ''; // Bật lại cuộn trang sau khi đóng menu
 });
-// Lấy tất cả các mục có class 'toggle-menu'
+// Đóng menu khi nhấn vào bên ngoài menu
+document.addEventListener('click', (event) => {
+    // Kiểm tra nếu nhấn vào ngoài menu và menu đang mở
+    if (!sideMenu.contains(event.target) && !hamburgerMenu.contains(event.target) && sideMenu.classList.contains('open')) {
+        sideMenu.classList.remove('open');
+        document.body.style.overflow = ''; // Bật lại cuộn trang
+    }
+});
+
+// Lấy tất cả các mục có class 'chuyen_menu'
 const toggleMenus = document.querySelectorAll('.chuyen_menu');
 
 toggleMenus.forEach((menu) => {
     menu.addEventListener('click', (event) => {
         event.preventDefault();
         
-        // Lấy ID của sub-menu từ thuộc tính 'data-target'
+        // Lấy ID của menu_phu từ thuộc tính 'data-target'
         const targetId = menu.getAttribute('data-target');
         const subMenu = document.getElementById(targetId);
 
-        // Kiểm tra nếu sub-menu đang mở, đóng nó lại
+        // Kiểm tra nếu menu_phu đang mở, đóng nó lại
         if (subMenu.classList.contains('open')) {
             subMenu.classList.remove('open');
         } else {
-            // Đóng tất cả các sub-menu khác trước khi mở sub-menu mới
+            // Đóng tất cả các menu_phu khác trước khi mở menu_phu mới
             document.querySelectorAll('.menu_phu').forEach((sm) => sm.classList.remove('open'));
             subMenu.classList.add('open');
         }

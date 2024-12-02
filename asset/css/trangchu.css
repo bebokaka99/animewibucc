@@ -27,8 +27,6 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
-
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -46,21 +44,17 @@ body {
     text-decoration: none;
     font-size: 0.9rem; 
 }
-
-
 .thanh_tim_kiem {
     display: flex;
     align-items: center;
     margin-left: auto; 
 }
-
 .thanh_tim_kiem input[type="text"] {
     padding: 0.5rem;
     border: none;
     border-radius: 5px 0 0 5px;
     outline: none;
 }
-
 .nut_tim_kiem {
     padding: 0.5rem 1rem;
     background-color: #ff3333;
@@ -536,7 +530,7 @@ span {
 .menu_phu.open {
     display: flex;
 }
-@media (max-width: 1450px) {
+@media (max-width: 140px) {
     
     .thanh_dieu_huong nav {
         display: none;
