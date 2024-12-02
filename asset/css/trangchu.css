@@ -530,7 +530,7 @@ span {
 .menu_phu.open {
     display: flex;
 }
-@media (max-width: 140px) {
+@media (max-width: 1450px) {
     
     .thanh_dieu_huong nav {
         display: none;
